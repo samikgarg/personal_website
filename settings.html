@@ -1,42 +1,61 @@
+<!DOCTYPE html>
+
 <html>
 
   <head>
+    <title>Settings</title>
     <link rel="stylesheet", href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
 
   <body>
 
     <nav>
-      <div id="navBar" class="topnav" >
-        <a id="navLink1" href="index.html">HOME</a>
-        <a id="navLink2" class="active" href="settings.html">
-          <img id="settingsIcon" class="settingsIcon" src="https://img.icons8.com/ios/50/000000/settings.png" href="settings.html" align="right"/>
-        </a>
+      <div id="navBar" class="topnav">
+        <a id="navLink1" class="navLink" href="index.html">HOME</a>
+        <a id="navLink2" class="navLink" href="education.html">EDUCATION</a>
+        <a id="navLink3" class="navLink" href="work.html">WORK</a>
+        <div class = "topnav-right">
+          <a id="navLink2" class="active" href="settings.html">
+            <img id="settingsIcon" class="settingsIcon" alt="Settings"/>
+          </a>
+        </div>
       </div>
     </nav>
 
-    <h1> <center> SETTINGS </center> </h1>
+    <h1>SETTINGS</h1>
     <br>
-    <h2>
+    <h2 style="text-align:left">
       BACKGROUND COLOUR:
-      <input id="colourPicker" type="color" style="height:60px; width:200px"></input>
+      <input id="colourPicker" class="input" type="color"></input>
 
       <br>
 
       FONT:
-      <select id="fontPicker" class="input" name = "dropdown">
-          <option value = "Helvetica" selected>Helvetica</option>
-          <option value = "Roboto">Roboto</option>
-          <option value = "Impact">Impact</option>
+      <select id="fontList" class="input">
+        <option value = "American Typewriter">American Typewriter</option>
+        <option value = "Arial">Arial</option>
+        <option value = "Arial Black">Arial Black</option>
+        <option value = "Bradley Hand">Bradley Hand</option>
+        <option value = "Brush Script MT">Brush Script</option>
+        <option value = "Courier">Courier</option>
+        <option value = "Didot">Didot</option>
+        <option value = "Georgia">Georgia</option>
+        <option value = "Helvetica">Helvetica</option>
+        <option value = "Impact">Impact</option>
+        <option value = "Lucida Console">Lucida Console</option>
+        <option value = "Luminari">Luminari</option>
+        <option value = "Monaco">Monaco</option>
+        <option value = "Roboto">Roboto</option>
+        <option value = "Tahoma">Tahoma</option>
+        <option value = "Times New Roman">Times New Roman</option>
+        <option value = "Trebuchet MS">Trebuchet</option>
+        <option value = "Verdana">Verdana</option>
       </select>
 
       <br>
 
-      FONT SIZE:
-      <input class="input" id="fontSizePicker"></input>
     </h2>
-
-    <br>
 
     TEXT
 
