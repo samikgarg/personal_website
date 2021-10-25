@@ -115,7 +115,6 @@ function setColor ()
 {
   document.body.style.backgroundColor = localStorage.getItem("bgColor"); //Sets the Background Colour to the stored value
   navBar.style.backgroundColor = localStorage.getItem("invColor"); //Sets the Nav Bar Colour to the stored value
-  //document.body.footer.style.backgroundColor = localStorage.getItem("invColor"); //Sets the Footer Colour to the stored value
 
   settingsIcon.src = localStorage.getItem("settingsIconSRC");
 
