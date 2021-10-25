@@ -126,6 +126,11 @@ table img
     cursor: pointer;
 }
 
+h1
+{
+  text-align: center;
+}
+
 @media screen and (max-width: 700px)
 {
   .sectionOdd, .sectionEven
@@ -185,7 +190,6 @@ table img
   h1
   {
     font-size: 100px;
-    text-align: center;
   }
 
   h2
@@ -197,6 +201,11 @@ table img
   {
     height: 60px;
     width: 100px;
+  }
+
+  .inline
+  {
+    display: inline-block;
   }
 }
 
