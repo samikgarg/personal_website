@@ -2,7 +2,6 @@
 .parallax-home, .parallax-work, .parallax-education
 {
   min-height: 500px;
-  /*margin: -20px;*/
 
   font-size: 250px;
   color: white;
@@ -34,7 +33,6 @@
 {
   background-color: #333;
   overflow: hidden;
-  /*amargin: 0 -20px 0 -20px;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -72,17 +70,6 @@
   margin: 50px;
 }
 
-h1
-{
-  font-size: 100px;
-  text-align: center;
-}
-
-h2
-{
-  font-size: 75px;
-}
-
 .noDecoration
 {
   text-decoration: none;
@@ -110,7 +97,6 @@ h2
 
 table
 {
-  border: 2 solid;
   border-collapse: collapse;
   width:100%;
 }
@@ -142,6 +128,16 @@ table img
 
 @media screen and (max-width: 700px)
 {
+  .sectionOdd, .sectionEven
+  {
+    padding: 10px;
+  }
+
+  body, .sectionOdd, .sectionEven, blockquote p
+  {
+    font-size: 12px;
+  }
+
   h1
   {
     font-size: 50px;
@@ -158,11 +154,6 @@ table img
     width: 200px;
   }
 
-  body, .sectionOdd, .sectionEven, blockquote p
-  {
-    font-size: 12px;
-  }
-
   blockquote cite
   {
     font-size:10px;
@@ -171,6 +162,11 @@ table img
 
 @media screen and (min-width: 700px)
 {
+  .sectionOdd, .sectionEven
+  {
+    padding: 50px;
+  }
+
   body, .sectionOdd, .sectionEven, blockquote p
   {
     font-size: 18px;
@@ -185,11 +181,23 @@ table img
   {
     font-size:14px;
   }
-}
 
-.sectionEven, .sectionOdd
-{
-  padding: 50px;
+  h1
+  {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  h2
+  {
+    font-size: 75px;
+  }
+
+  .input
+  {
+    height: 60px;
+    width: 100px;
+  }
 }
 
 .settingsIcon
@@ -202,12 +210,6 @@ table img
 {
   color: black;
   font-size: 20px;
-}
-
-.input
-{
-  height: 60px;
-  width: 100px;
 }
 
 blockquote cite
@@ -357,7 +359,7 @@ blockquote cite:before
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
